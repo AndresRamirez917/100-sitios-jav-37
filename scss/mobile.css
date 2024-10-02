@@ -1,0 +1,46 @@
+html, body {
+  scroll-behavior: auto;
+}
+
+.navbar .logo {
+  float: none;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+.navbar ul {
+  text-align: center;
+  margin: 0 auto;
+  float: none;
+}
+.navbar ul li {
+  display: inline-block;
+  margin-top: 1em;
+  font-size: small;
+}
+
+#showcase .display-1 {
+  font-size: 3em;
+}
+
+#services .services-row {
+  display: block;
+}
+#services .services-row .box {
+  padding: 10px;
+}
+#services .services-row .box h3 {
+  text-align: center;
+  margin: 0 auto;
+}
+#services .services-row .box p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#about .about-row {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}/*# sourceMappingURL=mobile.css.map */

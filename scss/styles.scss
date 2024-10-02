@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$font-stack: "Montserrat", sans-serif;
+$primary-color: #ec5c2c;
+$secondary-color: #29285a;
+$third-color: #f18c6b;
+$gray-color: grey;
+$showcase-color: #fff;
+
+//Main styling
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: $font-stack;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 30px;
+    overflow: auto;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.button-1 {
+    padding: 30px 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: #f2b4b4;
+}
+
+.button-2 {
+    padding: 20px 20px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: #f2b4b4;
+}
+
+.button-3 {
+    background: $primary-color;
+    color: #fff;
+    border-radius: 50px;
+}
+
+h2 {
+    color: $primary-color;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 3em 2em;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $showcase-color;
+}
+
+ul {
+    list-style: none;
+}
+
+//form
+form {
+    label {
+        margin-bottom: 1em;
+    }
+
+    .form-group {
+        margin-bottom: 1em;
+    }
+
+    .form-control {
+        width: 100%;
+        display: block;
+        padding: 1em;
+        background: #fff;
+        border-radius: 5px;
+    }
+
+    .button-3 {
+        width: 100%;
+        padding: 10px 20px;
+        margin-bottom: 2em;
+    }
+}
+
+//mainheader 
+#mainheader {
+
+    color: $showcase-color;
+
+}
+
+//navbar
+.navbar {
+    background: $primary-color;
+    .logo {
+        float: left;
+        width: 80px;
+        margin-top: 1em;
+    }
+
+    ul {
+        float: right;
+        margin-top: 1em;
+
+        li {
+            display: inline-block;
+            margin-left: 1em;
+        }
+    }
+}
+
+//showcase
+#showcase {
+ background: $primary-color;
+    text-align: center;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+
+
+    .display-1 {
+        font-size: 80px;
+        font-weight: bold;
+        margin-top: 1em;
+        margin-bottom: .5em;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 2em;
+
+    }
+
+    .button-2 {
+        margin-bottom: 2em;
+    }
+
+}
+
+//services
+#services {
+    h3 {
+        text-align: left;
+        font-size: 1.5em;
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .services-row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 20px;
+       
+
+        .box {
+            padding: 30px;
+            background: rgb(245, 244, 244);
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            margin-bottom: 10px;
+            }
+
+        img {
+            width: 200px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 2em;
+            padding: 20px;
+        }
+    
+        p {
+            margin-top: 1em;
+            width:20em;
+            line-height: 30px;
+        }
+
+    }
+
+    
+}
+
+//about
+#about {
+    .about-row {
+        display: flex;
+        gap: 50px;
+          .about-img {
+            img {
+                width: 400px;
+            }
+          }
+
+          .about-text {
+            h3 {
+                margin: 1em 0;
+            }
+            p {
+                line-height: 35px;
+            }
+          }
+    }
+}
+
+//contact
+#contact {
+    background: $secondary-color;
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2em;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    margin-bottom: 2em;
+     form {
+        width: 65%;
+        margin: 0 auto;
+     }
+}
+
+//footer 
+#footer {
+    text-align: center;
+    background: $primary-color;
+    padding: 3em 0;
+}
+
+/*!
+ * ScrollToTop v2.0
+ * Copyright 2019 zkreations
+ * Daniel Abel M. (fb.com/danieI.abel)
+ * Licensed under MIT (github.com/zkreations/plugins/blob/master/LICENSE)
+ */
+/*! Core (No modificar) {{*/
+    .scrollToTop {
+        outline: none;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .scrollToTop svg {
+        display: block;
+    }
+    
+    .scrollToTop {
+        position: fixed;
+        z-index: 9999;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .3s, background .3s, -webkit-transform .3s;
+        transition: transform .3s, opacity .3s, background .3s;
+        transition: transform .3s, opacity .3s, background .3s, -webkit-transform .3s;
+        -webkit-transform: translateY(-2em);
+        transform: translateY(-2em);
+    }
+    
+    .scrollToTop.visible {
+        pointer-events: all;
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    
+    /*}} Fin del core {{*/
+    
+    /*! Personalización */
+    /* Icono
+         -----------------------------------------*/
+    .scrollToTop svg {
+        fill: #FFFFFF;
+        /* color */
+    }
+    
+    /* Boton
+         -----------------------------------------*/
+    .scrollToTop {
+        background-color: #cc7980;
+        /* fondo */
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+        /* sombra */
+        bottom: 1em;
+        /* separación inferior */
+        right: 1em;
+        /* separación derecha */
+        padding: .5em;
+        /* relleno */
+        border-radius: 4px;
+        /* borde redondeado */
+    }
+    
+    .scrollToTop:hover {
+        background-color: #880509;
+        /* fondo (hover) */
+    }

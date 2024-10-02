@@ -1,0 +1,260 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 30px;
+  overflow: auto;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.button-1 {
+  padding: 30px 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background: #f2b4b4;
+}
+
+.button-2 {
+  padding: 20px 20px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background: #f2b4b4;
+}
+
+.button-3 {
+  background: #ec5c2c;
+  color: #fff;
+  border-radius: 50px;
+}
+
+h2 {
+  color: #ec5c2c;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 3em 2em;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+form label {
+  margin-bottom: 1em;
+}
+form .form-group {
+  margin-bottom: 1em;
+}
+form .form-control {
+  width: 100%;
+  display: block;
+  padding: 1em;
+  background: #fff;
+  border-radius: 5px;
+}
+form .button-3 {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 2em;
+}
+
+#mainheader {
+  color: #fff;
+}
+
+.navbar {
+  background: #ec5c2c;
+}
+.navbar .logo {
+  float: left;
+  width: 80px;
+  margin-top: 1em;
+}
+.navbar ul {
+  float: right;
+  margin-top: 1em;
+}
+.navbar ul li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+#showcase {
+  background: #ec5c2c;
+  text-align: center;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+#showcase .display-1 {
+  font-size: 80px;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+#showcase p {
+  text-align: center;
+  margin-bottom: 2em;
+}
+#showcase .button-2 {
+  margin-bottom: 2em;
+}
+
+#services h3 {
+  text-align: left;
+  font-size: 1.5em;
+}
+#services h4 {
+  text-align: center;
+  font-size: 1.5em;
+}
+#services .services-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 20px;
+}
+#services .services-row .box {
+  padding: 30px;
+  background: rgb(245, 244, 244);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+#services .services-row img {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2em;
+  padding: 20px;
+}
+#services .services-row p {
+  margin-top: 1em;
+  width: 20em;
+  line-height: 30px;
+}
+
+#about .about-row {
+  display: flex;
+  gap: 50px;
+}
+#about .about-row .about-img img {
+  width: 400px;
+}
+#about .about-row .about-text h3 {
+  margin: 1em 0;
+}
+#about .about-row .about-text p {
+  line-height: 35px;
+}
+
+#contact {
+  background: #29285a;
+  color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2em;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  margin-bottom: 2em;
+}
+#contact form {
+  width: 65%;
+  margin: 0 auto;
+}
+
+#footer {
+  text-align: center;
+  background: #ec5c2c;
+  padding: 3em 0;
+}
+
+/*!
+ * ScrollToTop v2.0
+ * Copyright 2019 zkreations
+ * Daniel Abel M. (fb.com/danieI.abel)
+ * Licensed under MIT (github.com/zkreations/plugins/blob/master/LICENSE)
+ */
+/*! Core (No modificar) {{*/
+.scrollToTop {
+  outline: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.scrollToTop svg {
+  display: block;
+}
+
+.scrollToTop {
+  position: fixed;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s, opacity 0.3s, background 0.3s;
+  transform: translateY(-2em);
+}
+
+.scrollToTop.visible {
+  pointer-events: all;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*}} Fin del core {{*/
+/*! Personalización */
+/* Icono
+     -----------------------------------------*/
+.scrollToTop svg {
+  fill: #FFFFFF;
+  /* color */
+}
+
+/* Boton
+     -----------------------------------------*/
+.scrollToTop {
+  background-color: #cc7980;
+  /* fondo */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  /* sombra */
+  bottom: 1em;
+  /* separación inferior */
+  right: 1em;
+  /* separación derecha */
+  padding: 0.5em;
+  /* relleno */
+  border-radius: 4px;
+  /* borde redondeado */
+}
+
+.scrollToTop:hover {
+  background-color: #880509;
+  /* fondo (hover) */
+}/*# sourceMappingURL=styles.css.map */
